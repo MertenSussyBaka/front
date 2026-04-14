@@ -38,7 +38,7 @@
             <ul>
                 <li><a href="index.html" title="Accueil">Accueil</a></li>
                 <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-                <li><a href="" title="Contact">Contact</a></li>
+                <li><a href="contact.html" title="Contact">Contact</a></li>
             </ul>
 
         </nav>
@@ -52,57 +52,66 @@
         <!-- Ligne de division horizontale -->
         <hr>
 
-        <!-- Section 1 -->
-        <section>
+        <!-- Paragraphe -->
+        <p>* Ces zones sont obligatoires</p>
 
-            <!-- Article 1 -->
-            <article>
+        <!-- Formulaire -->
+        <form action="http://bienvu.net/script.php" method="get">
 
-                <!-- Texte important -->
-                <h1>L'entreprise</h1>
+            <!-- Groupe de champ 1 -->
+            <fieldset>
 
-                <!-- Paragraphe 1 -->
-                <p>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</p>
+                <!-- Légende -->
+                <legend>Vos coordonnées</legend>
 
-                <!-- Paragraphe 2 -->
-                <p>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</p>
+                <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom" required><br>
+                <label for="nom">Votre prénom* : </label><input type="text" name="prénom" id="prénom" required><br>
 
-                <!-- Paragraphe 3 -->
-                <p>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</p>
+                <br>
 
-            </article>
+                <label for="sexe1">Sexe* : </label><input type="radio" name="sexe" value="Féminin" id="sexe1" required> Féminin<input type="radio" name="sexe" value="Masculin" id="sexe2"> Masculin<br>
 
-        </section>
+                <br>
 
-        <!-- Section 2 -->
-        <section>
+                <label for="ddn">Date de naissance* : </label><input type="date" name="ddn" id="ddn" required><br>
+                <label for="code postal">Code postal* : </label><input type="text" name="code postal" id="code postal" required><br>
+                <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
+                <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                <label for="email">Email* : </label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
 
-            <!-- Article 1 -->
-            <article>
+            </fieldset>
 
-                <!-- Texte important -->
-                <h1>Qualité</h1>
+            <!-- Groupe de champ 2 -->
+            <fieldset>
 
-                <!-- Paragraphe 1 -->
-                <p>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</p>
+                <!-- Légende -->
+                <legend>Votre demande</legend>
 
-                <!-- Paragraphe 2 -->
-                <p>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</p>
+                <label for="sujet">Sujet* : </label>
+                <select name="sujet" size="1" id="sujet" required>
 
-            </article>
+                    <option value="" selected>Veuillez sélectionner un sujet</option>
+                    <option value="Mes commandes">Mes commandes</option>
+                    <option value="Question sur un produit">Question sur un produit</option>
+                    <option value="Réclamation">Réclamation</option>
+                    <option value="Autres">Autres</option>
 
-            <!-- Article 2 -->
-            <article>
-                
-                <!-- Texte important -->
-                <h1>Devis gratuit</h1>
+                </select><br>
 
-                <!-- Paragraphe 1 -->
-                <p>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</p>
+                <label for="votre question">Votre question* : </label>
+                <textarea name="votre question" id="votre question" rows="2" required></textarea>
 
-            </article>
+            </fieldset>
 
-        </section>
+            <br>
+
+            <input type="checkbox" name="accepte" value="accepte" required>* J'accepte le traitement informatique de ce formulaire<br>
+
+            <br>
+
+            <input type="submit" value="Envoyer">
+
+        </form>
 
         <!-- Ligne de division horizontale -->
         <hr>
