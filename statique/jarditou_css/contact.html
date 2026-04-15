@@ -12,6 +12,9 @@
         <!-- Titre de la page -->
         <title>JARDITOU - Contact</title>
 
+        <!-- Appel du fichier CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
     </head>
 
     <!-- Fin de la balise head -->
@@ -20,113 +23,159 @@
 
     <body>
 
-        <!-- Entête de la page -->
-        <header>
+        <div>
 
-            <!-- Logo de l'entreprise -->
-            <img src="src/img/jarditou_logo.jpg" alt="Logo JARDITOU" title="Logo JARDITOU" width="500" height="150">
+            <!-- Entête de la page -->
+            <header>
 
-            <!-- "Devise" de l'entreprise -->
-            <p>La qualité depuis 70 ans</p>
+                <div>
 
-        </header>
+                    <!-- Logo de l'entreprise -->
+                    <img src="src/img/jarditou_logo.jpg" alt="Logo JARDITOU" title="Logo JARDITOU" width="500" height="150">
 
-        <!-- Bloc de navigation -->
-        <nav>
+                    <!-- "Devise" de l'entreprise -->
+                    <p>Tout le jardin</p>
 
-            <!-- Liste de pages web -->
-            <ul>
-                <li><a href="index.html" title="Accueil">Accueil</a></li>
-                <li><a href="tableau.html" title="Tableau">Tableau</a></li>
-                <li><a href="contact.html" title="Contact">Contact</a></li>
-            </ul>
+                </div>
 
-        </nav>
+            </header>
 
-        <!-- Image "Promotion" -->
-        <img src="src/img/promotion.jpg" alt="Promotion sur lames de terrasse" title="Promotion sur lames de terrasse">
+        </div>
+        <div>
 
-        <!-- Texte important -->
-        <h1>Accueil</h1>
+            <!-- Bloc de navigation -->
+            <nav>
 
-        <!-- Ligne de division horizontale -->
-        <hr>
+                <div>
+                
+                    <!-- Liste de pages web -->
+                    <ul>
+                        <li><a href="index.html" title="Accueil">Accueil</a></li>
+                        <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+                        <li><a href="contact.html" title="Contact">Contact</a></li>
+                    </ul>
 
-        <!-- Paragraphe -->
-        <p>* Ces zones sont obligatoires</p>
+                </div>
 
-        <!-- Formulaire -->
-        <form action="http://bienvu.net/script.php" method="get">
+            </nav>
 
-            <!-- Groupe de champ 1 -->
-            <fieldset>
+        </div>
 
-                <!-- Légende -->
-                <legend>Vos coordonnées</legend>
+        <div>
 
-                <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom" required><br>
-                <label for="nom">Votre prénom* : </label><input type="text" name="prénom" id="prénom" required><br>
+            <!-- Image "Promotion" -->
+            <img src="src/img/promotion.jpg" alt="Promotion sur lames de terrasse" title="Promotion sur lames de terrasse">
+
+        </div>
+
+        <div>
+
+            <!-- Texte important -->
+            <h1>Accueil</h1>
+
+        </div>
+
+        <div>
+        
+            <!-- Ligne de division horizontale -->
+            <hr>
+
+        </div>
+
+        <div>
+
+            <!-- Paragraphe -->
+            <p>* Ces zones sont obligatoires</p>
+
+        </div>
+
+        <div>
+
+            <!-- Formulaire -->
+            <form action="http://bienvu.net/script.php" method="get">
+
+                <!-- Groupe de champ 1 -->
+                <fieldset>
+
+                    <!-- Légende -->
+                    <legend>Vos coordonnées</legend>
+
+                    <label for="nom">Votre nom* : </label><input type="text" name="nom" id="nom" required><br>
+                    <label for="nom">Votre prénom* : </label><input type="text" name="prénom" id="prénom" required><br>
+
+                    <br>
+
+                    <label for="sexe1">Sexe* : </label><input type="radio" name="sexe" value="Féminin" id="sexe1" required> Féminin<input type="radio" name="sexe" value="Masculin" id="sexe2"> Masculin<br>
+
+                    <br>
+
+                    <label for="ddn">Date de naissance* : </label><input type="date" name="ddn" id="ddn" required><br>
+                    <label for="code_postal">Code postal* : </label><input type="text" name="code_postal" id="code_postal" required><br>
+                    <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
+                    <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
+                    <label for="email">Email* : </label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
+
+                </fieldset>
+
+                <!-- Groupe de champ 2 -->
+                <fieldset>
+
+                    <!-- Légende -->
+                    <legend>Votre demande</legend>
+
+                    <label for="sujet">Sujet* : </label>
+                    <select name="sujet" size="1" id="sujet" required>
+
+                        <option value="" selected>Veuillez sélectionner un sujet</option>
+                        <option value="Mes commandes">Mes commandes</option>
+                        <option value="Question sur un produit">Question sur un produit</option>
+                        <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+
+                    </select><br>
+
+                    <label for="votre_question">Votre question* : </label>
+                    <textarea name="votre_question" id="votre_question" rows="2" required></textarea>
+
+                </fieldset>
 
                 <br>
 
-                <label for="sexe1">Sexe* : </label><input type="radio" name="sexe" value="Féminin" id="sexe1" required> Féminin<input type="radio" name="sexe" value="Masculin" id="sexe2"> Masculin<br>
+                <input type="checkbox" name="accepte" value="accepte" required>* J'accepte le traitement informatique de ce formulaire<br>
 
                 <br>
 
-                <label for="ddn">Date de naissance* : </label><input type="date" name="ddn" id="ddn" required><br>
-                <label for="code_postal">Code postal* : </label><input type="text" name="code_postal" id="code_postal" required><br>
-                <label for="adresse">Adresse : </label><input type="text" name="adresse" id="adresse"><br>
-                <label for="ville">Ville : </label><input type="text" name="ville" id="ville"><br>
-                <label for="email">Email* : </label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required>
+                <input type="submit" value="Envoyer">
 
-            </fieldset>
+            </form>
 
-            <!-- Groupe de champ 2 -->
-            <fieldset>
+        </div>
 
-                <!-- Légende -->
-                <legend>Votre demande</legend>
+        <div>
 
-                <label for="sujet">Sujet* : </label>
-                <select name="sujet" size="1" id="sujet" required>
+            <!-- Ligne de division horizontale -->
+            <hr>
 
-                    <option value="" selected>Veuillez sélectionner un sujet</option>
-                    <option value="Mes commandes">Mes commandes</option>
-                    <option value="Question sur un produit">Question sur un produit</option>
-                    <option value="Réclamation">Réclamation</option>
-                    <option value="Autres">Autres</option>
+        </div>
 
-                </select><br>
+        <div>
 
-                <label for="votre_question">Votre question* : </label>
-                <textarea name="votre_question" id="votre_question" rows="2" required></textarea>
 
-            </fieldset>
+            <!-- Bas de page -->
+            <footer>
 
-            <br>
+                <!-- Liste de pages web -->
+                <ul>
 
-            <input type="checkbox" name="accepte" value="accepte" required>* J'accepte le traitement informatique de ce formulaire<br>
+                    <li><a href="">Mentions légales</a></li>
+                    <li><a href="">Horaires</a></li>
+                    <li><a href="">Plan du site</a></li>
 
-            <br>
+                </ul>
 
-            <input type="submit" value="Envoyer">
+            </footer>
 
-        </form>
-
-        <!-- Ligne de division horizontale -->
-        <hr>
-
-        <!-- Bas de page -->
-        <footer>
-
-            <!-- Liste de pages web -->
-            <ul>
-                <li><a href="">Mentions légales</a></li>
-                <li><a href="">Horaires</a></li>
-                <li><a href="">Plan du site</a></li>
-            </ul>
-
-        </footer>
+        </div>
 
     </body>
 
