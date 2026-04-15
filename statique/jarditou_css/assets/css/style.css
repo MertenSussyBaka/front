@@ -1,3 +1,58 @@
+.fondnoir {
+    list-style-type: none;
+    margin: 1;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.fondnoir li {
+    float: left;
+}
+
+.fondnoir li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+
 .engras {
-    font: bold;
+    font-weight: bold;
+}
+
+.parent {
+    display: flex;
+}
+
+#gauche {
+    flex: 1;
+}
+
+#droite {
+    width: 30%;
+    background-color: lightgray;
+}
+
+#promo {
+    flex: 1;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#header img {
+    width: 20em;
+    height: auto;
+    margin: 10px;
+}
+
+#header p {
+    padding: 0;
+    font-size: 30px;
 }
