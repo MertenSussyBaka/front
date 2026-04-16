@@ -18,6 +18,15 @@
             <div class="col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9">Colonne 1</div>
             <div class="col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">Colonne 2</div>
         </div>
+        <div class="d-none d-sm-block">
+            Ce bloc sera masqué par défaut, pour tout (d-none).
+            L'affichage sera rétabli à partir de -sm, c'est-à-dire pour les écrans plus grands que 576px.
+            Cela signifie plus généralement que la zone sera masquée pour les mobiles, mais visible pour tous les écrans plus larges.
+        </div>
+        <div class="d-lg-none d-xl-block">
+            Ce bloc sera masqué à partir de la plage de breakpoints -lg (>= 992px), puis rétabli à partir des écrans -xl, soit à partir de 1199px.
+            En-dessous de la plage -lg (jusqu'à 991px), la zone sera donc visible aussi !
+        </div>
     </div>
 
     <!-- Optional JavaScript -->
